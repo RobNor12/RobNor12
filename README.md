@@ -1,6 +1,7 @@
-Hello, welcome to this brance of my git repository, This repository branch contains my completed problem sets and final projects from Harvard University's CS50x course. This coursework provided the fundamental programming logic and algorithms that underpin my data analysis and SQL querying skills.
+**Hello** welcome to this brance of my git repository, This repository branch contains my completed problem sets and final projects from Harvard University's CS50x course. This coursework provided the fundamental programming logic and algorithms that underpin my data analysis and SQL querying skills.
 
-Skills learned: 
+****Skills learned****
+
 Programming Fundamentals (C): Mastery of variable declaration, loops, conditional logic, and memory management.
 
 Algorithmic Thinking: Implementation of sorting, searching (Binary Search), and recursive algorithms.
