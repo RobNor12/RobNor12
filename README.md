@@ -1,4 +1,6 @@
-**Hello** welcome to this brance of my git repository, This repository branch contains my completed problem sets and final projects from Harvard University's CS50x course. This coursework provided the fundamental programming logic and algorithms that underpin my data analysis and SQL querying skills.
+**Introduction**
+
+Hello, welcome to this branch of my git repository, This repository branch contains my completed problem sets and final projects from Harvard University's CS50x course. This coursework provided the fundamental programming logic and algorithms that underpin my data analysis and SQL querying skills.
 
 ****Skills learned****
 
@@ -11,3 +13,5 @@ Python Proficiency: Applying higher-level programming concepts for efficient dat
 Data Structures: Practical use of arrays, linked lists, hash tables, and dictionaries.
 
 SQL & Database Concepts: Foundational understanding of relational database design, querying, and manipulation.
+
+| **Course Unit** | **Language** | **Primary Study Topic** | **Problem set files** |
