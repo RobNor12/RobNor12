@@ -9,7 +9,9 @@ Hello, I'm Robert Norris III, and welcome to my Github page, this page is an ove
 Linkedin: www.linkedin.com/in/robert-n-331315345
 
 Email: rnorris12021@gmail.com
+
 note: the best way to get in contact with me is through email
+
 <br>
 <br> 
 
