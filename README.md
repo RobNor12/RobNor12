@@ -1,8 +1,8 @@
 🎓 Professional Portfolio Hub: Robert Norris III
 
 Hello, I'm Robert Norris III, and welcome to my Github page, this page is an overview for my repoistory and its branches
+
 <br>
-<br> 
 
 📞 How to Contact Me
 
@@ -13,7 +13,6 @@ Email: rnorris12021@gmail.com
 note: the best way to get in contact with me is through email
 
 <br>
-<br> 
 
 👨‍💻 Credentials and Who I Am
 
@@ -23,7 +22,7 @@ I am an inspiring IT personal intersted in the feilds of programing, data analyt
 | :--- | :--- |:--- | :--- |
 | Associates of Applied Sciences: Cybersecurity Technologies | Associates degree | Pearl River Community Collage(Popularville Mississippi) | Graduated May, 2025 |
 | CompTIA Security+ | Certificate | CompTIA | Completed,(Valid through April 2025-2028) |
-<br>
+
 <br>
 
 📚 Repository Branches
