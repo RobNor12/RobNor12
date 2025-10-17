@@ -17,4 +17,4 @@ SQL & Database Concepts: Foundational understanding of relational database desig
 | **Course Unit** | **Language** | **Primary Study Topic** | **Problem set files** |
 | :--- | :--- | :--- | :--- |
 | **week 0** | Scratch | Abstraction, Binary, and Foundational Logic | catch the cat.sb3 |
-| **Week 1** | C | Basic Syntax and flow control | mario-less.c |
+| **Week 1** | C | Basic Syntax and flow control | mario-less.c, cash.c, hello.c |
