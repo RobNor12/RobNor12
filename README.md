@@ -16,7 +16,7 @@ note: the best way to get in contact with me is through email
 
 👨‍💻 Credentials and Who I Am
 
-I am an inspiring IT personal intersted in the feilds of programing, data analytics and cybersecurity
+I am an inspiring IT professional interested in the fields of programming, data analytics, and cybersecurity
 
 | Crediental name | Crediental Classification | Issuing Authority | Status | 
 | :--- | :--- |:--- | :--- |
