@@ -1,10 +1,10 @@
-**Overview**
+🎓 Professional Portfolio Hub: Robert Norris III
 
 Hello, I'm Robert Norris III, and welcome to my Github page, this page is an overview for my repoistory and its branches
 <br>
 <br> 
 
-**How to contact me**
+📞 How to Contact Me
 
 Linkedin: www.linkedin.com/in/robert-n-331315345
 
@@ -15,7 +15,7 @@ note: the best way to get in contact with me is through email
 <br>
 <br> 
 
-**Credientials and who am I**
+👨‍💻 Credentials and Who I Am
 
 I am an inspiring IT personal intersted in the feilds of programing, data analytics and cybersecurity
 
@@ -26,7 +26,7 @@ I am an inspiring IT personal intersted in the feilds of programing, data analyt
 <br>
 <br>
 
-**Branches** 
+📚 Repository Branches
 
 A list of the branches that my repisitory contains
 
