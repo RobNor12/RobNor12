@@ -1,9 +1,11 @@
 **Overview**
 
-Hello, I'm Robert Norris III, and welcome to my Github page, this page is an overview for my repoistory and its branchs
+Hello, I'm Robert Norris III, and welcome to my Github page, this page is an overview for my repoistory and its branches
 
 **How to contact me**
+
 Linkedin: www.linkedin.com/in/robert-n-331315345
+
 Email: rnorris12021@gmail.com
 note: the best way to get in contact with me is through email 
 
@@ -15,3 +17,10 @@ I am an inspiring IT personal intersted in the feilds of programing, data analyt
 | :--- | :--- |:--- | :--- |
 | Associates of Applied Sciences: Cybersecurity Technologies | Associates degree | Pearl River Community Collage(Popularville Mississippi) | Graduated May, 2025 |
 | CompTIA Security+ | Certificate | CompTIA | Completed April, 2025-2028 |
+
+**Branches** 
+
+A list of the branches that my repisitory contains
+
+| Name of Branch | Branch focus subject |
+| :--- | :--- |
