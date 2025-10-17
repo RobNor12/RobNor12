@@ -11,6 +11,7 @@ int main(void){
     printf("hello, %s\n", name);
 }
 /*
+cs50/problems/2025/x/me
 :) hello.c exists
 Log
 checking that hello.c exists...
