@@ -20,8 +20,8 @@ I am an inspiring IT professional interested in the fields of programming, data 
 
 | Crediental name | Crediental Classification | Issuing Authority | Status | 
 | :--- | :--- |:--- | :--- |
-| Associates of Applied Sciences: Cybersecurity Technologies | Associates degree | Pearl River Community Collage(Popularville Mississippi) | Graduated May, 2025 |
-| CompTIA Security+ | Certificate | CompTIA | Completed,(Valid through April 2025-2028) |
+| Associates of Applied Sciences: Cybersecurity Technologies | Associates degree | Pearl River Community Collage(Popularville, Mississippi) | Graduated May, 2025 |
+| CompTIA Security+ | Certificate | CompTIA | Completed(Valid through April 2025-2028) |
 
 <br>
 
