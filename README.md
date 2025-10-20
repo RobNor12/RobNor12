@@ -25,3 +25,4 @@ SQL & Database Concepts: Foundational understanding of relational database desig
 | **week 0** | Scratch | Abstraction, Binary, and Foundational Logic | catch the cat.sb3 |
 | **Week 1** | C | Basic Syntax and flow control | mario-less.c, cash.c, hello.c |
 | **Week 2** | C | Arrays, Strings, and Code Readability | Scrabble.c, Readability.c, Caesar.c |
+| **Week 3** | C | Algorithms(Searching & Sorting) | Runoff.c, Sorting.txt, Pluarlity.c |
