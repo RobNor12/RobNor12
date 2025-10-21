@@ -26,3 +26,10 @@ SQL & Database Concepts: Foundational understanding of relational database desig
 | **Week 1** | C | Basic Syntax and flow control | mario-less.c, cash.c, hello.c |
 | **Week 2** | C | Arrays, Strings, and Code Readability | Scrabble.c, Readability.c, Caesar.c |
 | **Week 3** | C | Algorithms(Searching & Sorting) | Runoff.c, Sorting.txt, Pluarlity.c |
+| **Week 4** | C | Memory Management & Pointers |
+| **Week 5** | C | Data Structures, Linked Lists, Hash Tables | |
+| **Week 6** | Python | Programming with Abstraction | | 
+| **Week 7** | SQL | Database Design and Queries | |
+| **Week 8** | HTML, CSS, JavaScript | Web Development Fundamentals | |
+| **Week 9** | Flask | Web Application Development | |
+| **Week 10** | Final Project | Comprehensive capstone | |
