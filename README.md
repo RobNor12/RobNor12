@@ -19,10 +19,11 @@ SQL & Database Concepts: Foundational understanding of relational database desig
 <br>
 
 🏗️ Repository Structure
+Note: the problem sets for the related weeks are in the files with the same week number
 
 | **Course Unit** | **Language** | **Primary Study Topic** |
 | :--- | :--- | :--- |
-| **week 0** | Scratch | Abstraction, Binary, and Foundational Logic |
+| **Week 0** | Scratch | Abstraction, Binary, and Foundational Logic |
 | **Week 1** | C | Basic Syntax and flow control |
 | **Week 2** | C | Arrays, Strings, and Code Readability |
 | **Week 3** | C | Algorithms(Searching & Sorting) |
