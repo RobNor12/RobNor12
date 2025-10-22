@@ -19,6 +19,7 @@ SQL & Database Concepts: Foundational understanding of relational database desig
 <br>
 
 🏗️ Repository Structure
+
 Note: the problem sets for the related weeks are in the files with the same week number
 
 | **Course Unit** | **Language** | **Primary Study Topic** |
