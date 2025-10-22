@@ -20,16 +20,16 @@ SQL & Database Concepts: Foundational understanding of relational database desig
 
 🏗️ Repository Structure
 
-| **Course Unit** | **Language** | **Primary Study Topic** | **Problem set files** |
+| **Course Unit** | **Language** | **Primary Study Topic** |
 | :--- | :--- | :--- | :--- |
-| **week 0** | Scratch | Abstraction, Binary, and Foundational Logic | catch the cat.sb3 |
-| **Week 1** | C | Basic Syntax and flow control | mario-less.c, cash.c, hello.c |
-| **Week 2** | C | Arrays, Strings, and Code Readability | Scrabble.c, Readability.c, Caesar.c |
-| **Week 3** | C | Algorithms(Searching & Sorting) | Runoff.c, Sorting.txt, Pluarlity.c |
+| **week 0** | Scratch | Abstraction, Binary, and Foundational Logic |
+| **Week 1** | C | Basic Syntax and flow control |
+| **Week 2** | C | Arrays, Strings, and Code Readability |
+| **Week 3** | C | Algorithms(Searching & Sorting) |
 | **Week 4** | C | Memory Management & Pointers |
-| **Week 5** | C | Data Structures, Linked Lists, Hash Tables | |
-| **Week 6** | Python | Programming with Abstraction | | 
-| **Week 7** | SQL | Database Design and Queries | |
-| **Week 8** | HTML, CSS, JavaScript | Web Development Fundamentals | |
-| **Week 9** | Flask | Web Application Development | |
-| **Week 10** | Final Project | Comprehensive capstone | |
+| **Week 5** | C | Data Structures, Linked Lists, Hash Tables | 
+| **Week 6** | Python | Programming with Abstraction | 
+| **Week 7** | SQL | Database Design and Queries | 
+| **Week 8** | HTML, CSS, JavaScript | Web Development Fundamentals |
+| **Week 9** | Flask | Web Application Development | 
+| **Week 10** | Final Project | Comprehensive capstone | 
