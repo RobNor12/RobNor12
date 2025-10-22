@@ -1,0 +1,86 @@
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+    // ask for user imput
+    //  if user imput is not vaild 1-8 ask again for user imput again and again until the imput is
+    //  vaild
+    // once the imput is vaild make a prompt to calcualt the height of the pyrmade
+    // after the calculations print out the pyramid with the correct number of hashes
+    int n;
+    do{
+        n = get_int("Pyrimid height: ");
+    }
+
+    while(n < 1 || n > 8);
+
+    for(int i = 0; i < n; i++){
+
+        for (int j = 0; j < n - (i + 1); j++){
+            printf(" ");
+        }
+
+        for (int b = 0; b < i + 1; b++){
+            printf("#");
+        }
+        printf("\n");
+    }
+}
+/*
+cs50/problems/2025/x/mario/less
+
+:) mario.c exists
+Log
+checking that mario.c exists...
+
+:) mario.c compiles
+Log
+running clang mario.c -o mario -std=c11 -ggdb -lm -lcs50...
+
+:) rejects a height of -1
+Log
+running ./mario...
+sending input -1...
+checking that input was rejected...
+
+:) rejects a height of 0
+Log
+running ./mario...
+sending input 0...
+checking that input was rejected...
+
+:) handles a height of 1 correctly
+Log
+running ./mario...
+sending input 1...
+
+:) handles a height of 2 correctly
+Log
+running ./mario...
+sending input 2...
+
+:) handles a height of 8 correctly
+Log
+running ./mario...
+sending input 8...
+
+:) rejects a height of -1, and then accepts a height of 2
+Log
+running ./mario...
+sending input -1...
+checking that input was rejected...
+sending input 2...
+
+:) rejects a non-numeric height of "foo"
+Log
+running ./mario...
+sending input foo...
+checking that input was rejected...
+
+:) rejects a non-numeric height of ""
+Log
+running ./mario...
+sending input ...
+checking that input was rejected...
+*/
