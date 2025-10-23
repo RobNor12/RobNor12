@@ -20,7 +20,7 @@ SQL & Database Concepts: Foundational understanding of relational database desig
 
 🏗️ Repository Structure
 
-Note: the problem sets for the related weeks are in the files with the same week number
+All assignments are organized into zero-padded folders (e.g., week01, week02) to ensure proper numerical sorting. Each folder contains the completed problem sets for that unit.
 
 | **Course Unit** | **Language** | **Primary Study Topic** |
 | :--- | :--- | :--- |
