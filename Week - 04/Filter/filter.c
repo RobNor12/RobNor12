@@ -12,22 +12,22 @@ int main(int argc, char *argv[]){
     // Get filter flag and check validity
     char filter = getopt(argc, argv, filters);
     if (filter == '?'){
-
         printf("Invalid filter.\n");
+        
         return 1;
     }
 
     // Ensure only one filter
     if (getopt(argc, argv, filters) != -1){
-
         printf("Only one filter allowed.\n");
+        
         return 2;
     }
 
     // Ensure proper usage
     if (argc != optind + 2){
-
         printf("Usage: ./filter [flag] infile outfile\n");
+        
         return 3;
     }
 
@@ -38,17 +38,17 @@ int main(int argc, char *argv[]){
     // Open input file
     FILE *inptr = fopen(infile, "r");
     if (inptr == NULL){
-
         printf("Could not open %s.\n", infile);
+        
         return 4;
     }
 
     // Open output file
     FILE *outptr = fopen(outfile, "w");
     if (outptr == NULL){
-
         fclose(inptr);
         printf("Could not create %s.\n", outfile);
+        
         return 5;
     }
 
@@ -63,10 +63,10 @@ int main(int argc, char *argv[]){
     // Ensure infile is (likely) a 24-bit uncompressed BMP 4.0
     if (bf.bfType != 0x4d42 || bf.bfOffBits != 54 || bi.biSize != 40 ||
         bi.biBitCount != 24 || bi.biCompression != 0){
-
         fclose(outptr);
         fclose(inptr);
         printf("Unsupported file format.\n");
+        
         return 6;
     }
 
@@ -77,10 +77,10 @@ int main(int argc, char *argv[]){
     // Allocate memory for image
     RGBTRIPLE(*image)[width] = calloc(height, width * sizeof(RGBTRIPLE));
     if (image == NULL){
-
         printf("Not enough memory to store image.\n");
         fclose(outptr);
         fclose(inptr);
+        
         return 7;
     }
 
@@ -129,7 +129,6 @@ int main(int argc, char *argv[]){
 
     // Write new pixels to outfile
     for (int i = 0; i < height; i++){
-
         // Write row to outfile
         fwrite(image[i], sizeof(RGBTRIPLE), width, outptr);
 
