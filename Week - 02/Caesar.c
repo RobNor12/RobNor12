@@ -21,26 +21,24 @@ int main(int argc, string argv[]){
 
         // Rotate the character if it's a letter
     if(argc != 2){
-
         printf("Usage: ./ceaser key\n");
-
+        
         return 1;
     }
 
     if(!only_digits(argv[1])){
         printf("Usage: ./ceaser key\n");
-
+        
         return 1;
     }
 
     int k = atoi(argv[1]);
-
+    
     string plaintext = get_string("Plaintext: ");
 
     printf("Ciphertext: ");
 
     for (int i = 0; i < strlen(plaintext); i++){
-
         char c = plaintext[i];
 
         if(isalpha(c)){
@@ -51,13 +49,13 @@ int main(int argc, string argv[]){
             printf("%c", c);
         }
     }
+    
     printf("\n");
     return 0;
 }
 
 bool only_digits(string s){
     for(int i = 0; i < strlen(s); i++){
-
         if(!isdigit(s[i])){
             return false;
         }
@@ -67,7 +65,6 @@ bool only_digits(string s){
 }
 
 char rotate(char c, int n){
-
     if(isupper(c)){
         char r = (c - 'A' + n) % 26 + 'A';
         return r;
