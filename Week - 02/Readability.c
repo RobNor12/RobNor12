@@ -23,18 +23,18 @@ int main(void){
     float index = 0.0588 * L - 0.296 * S - 15.8;
 
     int grade = (int) round(index);
-    if (grade < 1)
-    {
+    if (grade < 1){
+        
         printf("Before Grade 1\n");
     }
     // Case 2: Grade 16+
-    else if (grade >= 16)
-    {
+    else if (grade >= 16){
+        
         printf("Grade 16+\n");
     }
     // Case 3: All other grades (Grade 1 through 15)
-    else
-    {
+    else{
+        
         printf("Grade %i\n", grade);
     }
 }
@@ -43,31 +43,38 @@ int main(void){
 
     // print the grade level using a system that matches the index to a specific grade level
 int count_letters(string text){
+    
     //returns the number of letters within the string
     int letter_count = 0;
     for(int i = 0; i < strlen(text); i++){
+        
         isalpha(text[i]);
         if(isalpha(text[i])){
             letter_count++;
         }
     }
+    
     return letter_count;
 }
 
 int count_words(string text){
+    
     //returns the number of words within the string
     int word_count = 1;
      for(int i = 0; i < strlen(text); i++){
+         
         if(isspace(text[i])){
             // If it is a space, it marks the beginning of the next word.
             word_count++;
         }
 
     }
+    
     return word_count;
 }
 
 int count_sentences(string text){
+    
     //returns the number of sentences within the string
     int sentence_count = 0;
     for(int i = 0; i < strlen(text); i++){
@@ -75,8 +82,10 @@ int count_sentences(string text){
             sentence_count++;
         }
     }
+    
 return sentence_count;
 }
+
 /*
 cs50/problems/2025/x/readability
 :) readability.c exists
