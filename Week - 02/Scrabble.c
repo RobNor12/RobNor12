@@ -46,6 +46,7 @@ int compute_score(string word){
     }
     return score;
 }
+
 /*
 cs50/problems/2025/x/scrabble
 
