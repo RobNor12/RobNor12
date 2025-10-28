@@ -4,7 +4,6 @@
 int main(void){
 
     // 1. Prompt the user for their name using the get_string function
-    // The prompt text is "whats your name? "
     string name = get_string("whats your name? ");
 
     // 2. Print the personalized greeting, matching the required output format.
