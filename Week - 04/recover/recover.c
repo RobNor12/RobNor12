@@ -6,8 +6,8 @@
 int main(int argc, char *argv[]){
     // Accept a single command-line argument
     if (argc != 2){
-        
         printf("Usage: ./recover FILE\n");
+        
         return 1;
     }
 
@@ -15,8 +15,8 @@ int main(int argc, char *argv[]){
     FILE *card = fopen(argv[1], "r");
     // Error check 
     if (card == NULL){
-        
         printf("Could not open file.\n");
+        
         return 1;
     }
 
@@ -32,17 +32,14 @@ int main(int argc, char *argv[]){
     // Counter for sequential filenames
     int jpeg_count = 0;
 
-
     // While there's still data left to read from the memory card
     while (fread(buffer, 1, 512, card) == 512){
-        
         // Check for New JPEG Signature (State 1)
         // Explicitly cast buffer elements to (int) during comparison
         if ((int)buffer[0] == 0xff && (int)buffer[1] == 0xd8 && (int)buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0 ){
             
             // Close the old file (if one was open)
-            if (img != NULL){
-                
+            if (img != NULL){        
                 fclose(img);
             }
 
@@ -53,8 +50,8 @@ int main(int argc, char *argv[]){
             img = fopen(filename, "w");
             
             if (img == NULL){
-                
                 fclose(card);
+                
                 return 1; // Handle file opening error
             }
 
@@ -65,7 +62,6 @@ int main(int argc, char *argv[]){
 
         // Check if we are currently writing a JPEG file (State 2)
         else if (img != NULL){
-            
             // Write the current block to the open file
             fwrite(buffer, 1, 512, img);
         }
@@ -74,7 +70,6 @@ int main(int argc, char *argv[]){
     // --- Final Cleanup ---
     // Close the last JPEG output file, if one was ever opened
     if (img != NULL){
-        
         fclose(img);
     }
 
