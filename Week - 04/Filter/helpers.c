@@ -7,7 +7,6 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width]){
     for (int i = 0; i < height; i++){
 
         for (int j = 0; j < width; j++){
-
             // Use floats to prevent integer division
             float r = image[i][j].rgbtRed;
             float g = image[i][j].rgbtGreen;
@@ -22,6 +21,7 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width]){
             image[i][j].rgbtBlue = avg;
         }
     }
+
     return;
 }
 
@@ -32,7 +32,6 @@ void reflect(int height, int width, RGBTRIPLE image[height][width]){
 
         // Loop through HALF of the columns to avoid swapping back!
         for (int j = 0; j < width / 2; j++){
-
             // Calculate the mirror column index
             int mirror_j = width - 1 - j;
 
@@ -42,6 +41,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width]){
             image[i][mirror_j] = temp;
         }
     }
+    
     return;
 }
 
@@ -63,7 +63,6 @@ void blur(int height, int width, RGBTRIPLE image[height][width]){
     for (int i = 0; i < height; i++){
 
         for (int j = 0; j < width; j++){
-
             float total_red = 0;
             float total_green = 0;
             float total_blue = 0;
@@ -79,7 +78,6 @@ void blur(int height, int width, RGBTRIPLE image[height][width]){
 
                     // Boundary Check: Ensure the neighbor is within bounds
                     if (neighbor_i >= 0 && neighbor_i < height && neighbor_j >= 0 && neighbor_j < width){
-
                         total_red += temp_image[neighbor_i][neighbor_j].rgbtRed;
                         total_green += temp_image[neighbor_i][neighbor_j].rgbtGreen;
                         total_blue += temp_image[neighbor_i][neighbor_j].rgbtBlue;
@@ -94,6 +92,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width]){
             image[i][j].rgbtBlue = round(total_blue / count);
         }
     }
+    
     return;
 }
 
@@ -127,7 +126,6 @@ void edges(int height, int width, RGBTRIPLE image[height][width]){
     for (int i = 0; i < height; i++){
 
         for (int j = 0; j < width; j++){
-
             // Accumulators for Gx and Gy for all three colors
             long Gx_red = 0;
             long Gx_green = 0;
@@ -140,13 +138,11 @@ void edges(int height, int width, RGBTRIPLE image[height][width]){
             for (int k = -1; k <= 1; k++){
 
                 for (int l = -1; l <= 1; l++){
-
                     int neighbor_i = i + k;
                     int neighbor_j = j + l;
 
                     // Boundary Check
                     if (neighbor_i >= 0 && neighbor_i < height && neighbor_j >= 0 && neighbor_j < width){
-
                         // Accumulate Gx values
                         Gx_red += (long) Gx[k + 1][l + 1] * temp_image[neighbor_i][neighbor_j].rgbtRed;
                         Gx_green += (long) Gx[k + 1][l + 1] * temp_image[neighbor_i][neighbor_j].rgbtGreen;
@@ -178,5 +174,6 @@ void edges(int height, int width, RGBTRIPLE image[height][width]){
             image[i][j].rgbtBlue = (final_blue > 255) ? 255 : final_blue;
         }
     }
+    
     return;
 }
