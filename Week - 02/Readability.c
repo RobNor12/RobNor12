@@ -29,12 +29,10 @@ int main(void){
     }
     // Case 2: Grade 16+
     else if (grade >= 16){
-        
         printf("Grade 16+\n");
     }
     // Case 3: All other grades (Grade 1 through 15)
     else{
-        
         printf("Grade %i\n", grade);
     }
 }
@@ -46,8 +44,7 @@ int count_letters(string text){
     
     //returns the number of letters within the string
     int letter_count = 0;
-    for(int i = 0; i < strlen(text); i++){
-        
+    for(int i = 0; i < strlen(text); i++){ 
         isalpha(text[i]);
         if(isalpha(text[i])){
             letter_count++;
@@ -62,8 +59,7 @@ int count_words(string text){
     //returns the number of words within the string
     int word_count = 1;
      for(int i = 0; i < strlen(text); i++){
-         
-        if(isspace(text[i])){
+         if(isspace(text[i])){
             // If it is a space, it marks the beginning of the next word.
             word_count++;
         }
@@ -74,7 +70,6 @@ int count_words(string text){
 }
 
 int count_sentences(string text){
-    
     //returns the number of sentences within the string
     int sentence_count = 0;
     for(int i = 0; i < strlen(text); i++){
