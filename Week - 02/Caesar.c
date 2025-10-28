@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <cs50.h>
 #include <ctype.h>
@@ -63,6 +62,7 @@ bool only_digits(string s){
             return false;
         }
     }
+    
     return true;
 }
 
@@ -77,6 +77,7 @@ char rotate(char c, int n){
         char r = (c - 'a' + n) % 26 + 'a';
         return r;
     }
+    
     return c;
 }
 
