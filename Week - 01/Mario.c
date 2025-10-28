@@ -1,8 +1,8 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int main(void)
-{
+int main(void){
+    
     // ask for user imput
     //  if user imput is not vaild 1-8 ask again for user imput again and again until the imput is
     //  vaild
@@ -24,9 +24,11 @@ int main(void)
         for (int b = 0; b < i + 1; b++){
             printf("#");
         }
+        
         printf("\n");
     }
 }
+
 /*
 cs50/problems/2025/x/mario/less
 
