@@ -10,6 +10,7 @@ int main(void){
     // Prompt the user for change owed, in cents
     int cents;
     int total_coins;
+    
     do {
         cents = get_int("Change owed: ");
     }
@@ -33,7 +34,6 @@ int main(void){
 }
 
 int calculate_quarters(int cents){
-    
     // Calculate how many quarters you should give customer
     int quarters = 0;
     while(cents >= 25){
@@ -45,7 +45,6 @@ int calculate_quarters(int cents){
 }
 
 int calculate_dimes(int cents){
-
     int dimes = 0;
     while(cents >= 10){
         dimes++;
@@ -56,7 +55,6 @@ int calculate_dimes(int cents){
 }
 
 int calculate_nickels(int cents){
-
     int nickels = 0;
     while(cents >= 5){
         nickels++;
@@ -67,7 +65,6 @@ int calculate_nickels(int cents){
 }
 
 int calculate_pennys(int cents){
-
     int pennys = 0;
     while(cents > 0){
         pennys++;
