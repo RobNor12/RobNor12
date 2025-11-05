@@ -1,0 +1,29 @@
+to get the audio aura from this database we would need to SELECT the number of listens and the genre's that
+the songs is listed under, as well as getting the average Valenece, danceability, and energy
+
+check50
+cs50/problems/2025/x/songs
+
+:) SQL files exists
+Log
+checking that 1.sql exists...
+checking that 2.sql exists...
+checking that 3.sql exists...
+checking that 4.sql exists...
+checking that 5.sql exists...
+checking that 6.sql exists...
+checking that 7.sql exists...
+
+:) answers.txt exists
+Log
+checking that answers.txt exists...
+:) 1.sql produces correct result
+:) 2.sql produces correct result
+:) 3.sql produces correct result
+:) 4.sql produces correct result
+:) 5.sql produces correct result
+:) 6.sql produces correct result
+:) 7.sql produces correct result
+:) 8.sql produces correct result
+
+:) answers.txt includes reflection
