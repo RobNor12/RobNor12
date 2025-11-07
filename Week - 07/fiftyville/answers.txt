@@ -1,0 +1,14 @@
+The THIEF is: Bruce
+The city the thief ESCAPED TO: New York City
+The ACCOMPLICE is: Robin
+
+check50
+cs50/problems/2025/x/fiftyville
+
+:) log.sql and answers.txt exist
+Log
+checking that log.sql exists...
+checking that answers.txt exists...
+
+:) log file contains SELECT queries
+:) mystery solved
