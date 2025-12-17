@@ -1,0 +1,6 @@
+check50
+cs50/problems/2025/x/trivia
+:) Trivia submitted
+Log
+checking that index.html exists...
+checking that styles.css exists...
