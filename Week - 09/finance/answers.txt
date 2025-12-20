@@ -1,0 +1,141 @@
+check50
+cs50/problems/2025/x/finance
+
+:) app.py exists
+Log
+checking that app.py exists...
+
+:) application starts up
+Log
+sending GET request to /
+checking that status code 200 is returned...
+
+:) register page has all required elements
+Log
+sending GET request to /register
+found required "username" field
+found required "password" field
+found required "confirmation" field
+
+:) registering user succeeds (and login or portfolio page is displayed)
+Log
+sending POST request to /register
+checking that status code 200 is returned...
+
+:) registration with an empty field fails
+Log
+sending POST request to /register
+checking that status code 400 is returned...
+sending POST request to /register
+checking that status code 400 is returned...
+sending POST request to /register
+checking that status code 400 is returned...
+
+:) registration with password mismatch fails
+Log
+sending POST request to /register
+checking that status code 400 is returned...
+
+:) registration rejects duplicate username
+Log
+sending POST request to /register
+checking that status code 200 is returned...
+sending POST request to /register
+checking that status code 400 is returned...
+
+:) login page has all required elements
+Log
+sending GET request to /login
+found required "username" field
+found required "password" field
+
+:) logging in as registered user succceeds
+Log
+sending POST request to /login
+checking that status code 200 is returned...
+sending GET request to /
+checking that status code 200 is returned...
+
+:) quote page has all required elements
+Log
+sending POST request to /login
+sending GET request to /quote
+found required "symbol" field
+
+:) quote handles invalid ticker symbol
+Log
+sending POST request to /login
+sending POST request to /quote
+checking that status code 400 is returned...
+
+:) quote handles blank ticker symbol
+Log
+sending POST request to /login
+sending POST request to /quote
+checking that status code 400 is returned...
+
+:) quote handles valid ticker symbol
+Log
+sending POST request to /login
+sending POST request to /quote
+checking that status code 200 is returned...
+checking that "28.00" is in page
+
+:) buy page has all required elements
+Log
+sending POST request to /login
+sending GET request to /buy
+found required "symbol" field
+found required "shares" field
+
+:) buy handles invalid ticker symbol
+Log
+sending POST request to /login
+sending POST request to /buy
+checking that status code 400 is returned...
+
+:) buy handles fractional, negative, and non-numeric shares
+Log
+sending POST request to /login
+sending POST request to /buy
+checking that status code 400 is returned...
+sending POST request to /buy
+checking that status code 400 is returned...
+sending POST request to /buy
+checking that status code 400 is returned...
+
+:) buy handles valid purchase
+Log
+sending POST request to /login
+sending POST request to /buy
+sending POST request to /buy
+checking that "112.00" is in page
+checking that "9,888.00" is in page
+
+:) sell page has all required elements
+Log
+sending POST request to /login
+sending GET request to /sell
+found required "shares" field
+sending GET request to /sell
+found required "symbol" field
+
+:) sell handles invalid number of shares
+Log
+sending POST request to /login
+sending POST request to /sell
+checking that status code 400 is returned...
+
+:) sell handles valid sale
+Log
+sending POST request to /login
+sending POST request to /sell
+checking that "56.00" is in page
+checking that "9,944.00" is in page
+
+:) history page shows transactions
+Log
+sending POST request to /login
+sending GET request to /history
+checking that "28.00" is in page
+checking that "AAAA" is in page
