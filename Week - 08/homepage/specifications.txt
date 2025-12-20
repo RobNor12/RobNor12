@@ -1,0 +1,7 @@
+HTML tags I used:
+Nav, Anchor, Paragraph, Brake, horizantal row, header, Div, Button, Script, Link
+
+CSS styles I used:
+Background color, padding, font, color, border-width
+
+Javascript: used java script to make a program for my quiz part of my website

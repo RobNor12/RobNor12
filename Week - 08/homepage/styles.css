@@ -1,0 +1,59 @@
+#body{
+    background-color: #6600D6
+}
+
+#sections{
+     padding: 0.5rem 1rem;
+     color:white;
+}
+#title{
+    color:white;
+}
+
+#paragraphs{
+    color:white;
+}
+
+#main-navbar{
+    font-family: "Arial", sans-serif;
+}
+
+#nav-homepage {
+    color: white;
+    background-color: #00D69D; /* Only the About Me link is blue */
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 5px;
+}
+
+#nav-about-me {
+    color: white;
+    background-color: #0C04C9; /* Only the About Me link is blue */
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 5px;
+}
+
+#nav-hobbies {
+    color: white;
+    background-color: #F54927;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 5px;
+}
+
+#nav-quiz {
+    color: white;
+    background-color: #B00000; /* Only the Quiz link is red */
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 5px;
+}
