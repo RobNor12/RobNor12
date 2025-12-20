@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>📈 Stock Market</h2>
+
+<form action="/search" method="post">
+    <input type="text" name="symbol" placeholder="Search symbol (AAPL)" required>
+    <button type="submit">Search</button>
+</form>
+
+<hr>
+
+{% for stock in stocks %}
+    <div class="stock-card">
+        <h3>
+            {{ stock.symbol }}
+            {% if stock.name %}
+                <small>– {{ stock.name }}</small>
+            {% endif %}
+        </h3>
+
+        <div class="stock-price">
+            ${{ "%.2f"|format(stock.price) }}
+        </div>
+
+        <a class="bookmark" href="/bookmark/{{ stock.symbol }}">
+            📌 Add to Wall
+        </a>
+    </div>
+{% else %}
+    <p>No stocks available.</p>
+{% endfor %}
+
+{% endblock %}

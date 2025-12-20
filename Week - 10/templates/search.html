@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>Add a Stock</h2>
+
+<form action="/search" method="POST">
+    <input type="text" name="symbol" placeholder="Enter stock symbol" required>
+    <button type="submit">Add Stock</button>
+</form>
+
+{% endblock %}
