@@ -1,0 +1,29 @@
+<!-- Extend a layout file if you have one, or just provide the full HTML -->
+{% extends "layout.html" %}
+
+{% block title %}
+    Get Quote
+{% endblock %}
+
+{% block main %}
+    <div class="flex flex-col items-center justify-center p-4">
+        <form action="/quote" method="post" class="w-full max-w-md bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+            <h1 class="text-2xl font-semibold mb-6 text-gray-800 text-center">Look Up Stock Price</h1>
+
+            <div class="mb-4">
+                <input autocomplete="off"
+                       autofocus
+                       class="form-control w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-gray-700"
+                       id="symbol"
+                       name="symbol"
+                       placeholder="Stock Symbol (e.g., TSLA)"
+                       type="text">
+            </div>
+
+            <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-150 font-medium shadow-md"
+                    type="submit">
+                Get Quote
+            </button>
+        </form>
+    </div>
+{% endblock %}

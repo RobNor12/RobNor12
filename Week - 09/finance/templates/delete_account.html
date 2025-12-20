@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Delete Account
+{% endblock %}
+
+{% block main %}
+    <h3 class="text-danger mb-4">Are you sure? This action cannot be undone.</h3>
+
+    <form action="/delete_account" method="post">
+
+        <div class="mb-3">
+            <input
+                autocomplete="off"
+                autofocus
+                class="form-control mx-auto w-auto"
+                name="password"
+                placeholder="Enter Password to Confirm Deletion"
+                type="password"
+                required
+            >
+        </div>
+
+        <button class="btn btn-danger" type="submit">Permanently Delete Account</button>
+    </form>
+{% endblock %}

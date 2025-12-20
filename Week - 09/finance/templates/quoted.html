@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <h1 class="text-3xl font-extrabold text-gray-900 mb-8 border-b pb-2">Quote Result</h1>
+
+    <div class="max-w-xl mx-auto p-8 bg-white shadow-xl rounded-xl border border-green-200 text-center">
+
+        {% if symbol and name and price %}
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">{{ name }} ({{ symbol }})</h2>
+            <p class="text-gray-600 text-lg mb-6">Current Market Price:</p>
+            <p class="text-5xl font-extrabold text-green-600">
+                <!-- Using the built-in 'usd' filter -->
+                {{ price }}
+            </p>
+            <p class="mt-8 text-sm text-gray-500">
+                Price data is typically delayed by 15-20 minutes.
+            </p>
+        {% else %}
+            <!-- This should only happen if the Python code passes NO data or invalid data -->
+            <p class="text-xl text-red-600">
+                Sorry, we could not find a quote for that symbol or an error occurred.
+            </p>
+            <a href="/quote" class="mt-6 inline-block text-indigo-600 hover:text-indigo-800 font-semibold transition duration-150">
+                Try Another Symbol
+            </a>
+        {% endif %}
+
+    </div>
+
+{% endblock %}
