@@ -21,7 +21,8 @@ I am an inspiring IT professional interested in the fields of programming, data 
 | Crediental name | Crediental Classification | Issuing Authority | Status | 
 | :--- | :--- |:--- | :--- |
 | Associates of Applied Sciences: Cybersecurity Technologies | Associates degree | Pearl River Community Collage(Popularville, Mississippi) | Graduated May, 2025 |
-| CompTIA Security+ | Certificate | CompTIA | Completed(Valid through April 2025-2028) |
+| CompTIA Security+ | Certification | CompTIA | Completed(Valid through April 2025-2028) |
+| Google Data Analytics Professional Certificate | Certificate | Coursera | Expected February 2026 |
 
 <br>
 
@@ -32,5 +33,6 @@ A list of the branches that my repisitory contains
 | Name of Branch | Branch focus subject |
 | :--- | :--- |
 | Harvard-CS50 | Harvard CS50: Introduction to Computer Science |
+| S&P 500 vs Case-Shiller project| Personal Project |
 
 To access my branches click on the main branch drop down menu
