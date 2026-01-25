@@ -1,36 +1,94 @@
-🎓 Professional Portfolio Hub: Robert Norris III
+📊 S&P 500 vs. Case-Shiller Housing Index Analysis
+Overview
 
-Hello, I'm Robert Norris III, and welcome to my Github page, this page is an overview for my repoistory and its branches
+This project explores the relationship between U.S. equity market performance and residential housing prices by analyzing historical data from the S&P 500 Index and the Case-Shiller U.S. National Home Price Index. Using time-series analysis techniques, the project examines correlations, rolling correlations, and potential lagged relationships between the two datasets.
 
-<br>
+The goal of this analysis is to identify patterns and associations, not to imply causation or make predictions.
 
-📞 How to Contact Me
+Objectives
 
-Linkedin: www.linkedin.com/in/robert-n-331315345
+Analyze long-term trends in U.S. equity markets and housing prices
 
-Email: rnorris12021@gmail.com
+Measure correlations between monthly market returns and housing price changes
 
-note: the best way to get in contact with me is through email
+Examine how correlations vary over time using rolling windows
 
-<br>
+Explore whether equity market movements tend to lead housing price changes
 
-👨‍💻 Credentials and Who I Am
+Data Sources
 
-I am an inspiring IT professional interested in the fields of programming, data analytics, and cybersecurity
+S&P 500 Index
+Source: Yahoo Finance (^GSPC)
+Frequency: Monthly
 
-| Crediental name | Crediental Classification | Issuing Authority | Status | 
-| :--- | :--- |:--- | :--- |
-| Associates of Applied Sciences: Cybersecurity Technologies | Associates degree | Pearl River Community Collage(Popularville, Mississippi) | Graduated May, 2025 |
-| CompTIA Security+ | Certificate | CompTIA | Completed(Valid through April 2025-2028) |
+Case-Shiller U.S. National Home Price Index
+Source: Federal Reserve Economic Data (FRED), series CSUSHPINSA
+Frequency: Monthly
 
-<br>
+Time Range: 2000 – 2025 (through the most recent available Case-Shiller data)
 
-📚 Repository Branches
+Tools & Technologies
 
-A list of the branches that my repisitory contains
+Python
 
-| Name of Branch | Branch focus subject |
-| :--- | :--- |
-| Harvard-CS50 | Harvard CS50: Introduction to Computer Science |
+pandas
 
-To access my branches click on the main branch drop down menu
+NumPy
+
+matplotlib
+
+Jupyter Notebook
+
+Methodology
+
+Imported and cleaned monthly time-series data from both sources
+
+Converted date columns to datetime format and aligned datasets by date
+
+Visualized index levels to compare long-term trends
+
+Calculated monthly percentage changes to analyze market movement rather than absolute values
+
+Computed Pearson correlations between monthly returns
+
+Analyzed rolling correlations using a 12-month window
+
+Conducted exploratory lag analysis to assess whether equity market changes precede housing price changes
+
+Key Findings
+
+The correlation between equity markets and housing prices varies over time
+
+Stronger correlations tend to appear during periods of economic stress
+
+Housing prices generally respond more slowly than equity markets
+
+No consistent or stable lead-lag relationship was observed across the entire time period
+
+Limitations
+
+Case-Shiller data is subject to reporting delays
+
+Analysis does not control for interest rates, inflation, or monetary policy
+
+Data represents national-level trends and does not reflect regional variation
+
+Correlation does not imply causation
+
+Conclusion
+
+This analysis demonstrates that while equity markets and housing prices are influenced by shared macroeconomic conditions, their relationship is not constant over time. The findings highlight the importance of temporal context when analyzing financial and economic data.
+
+Future Improvements
+
+Incorporate interest rate and inflation data for multivariate analysis
+
+Analyze regional Case-Shiller indices
+
+Extend analysis with additional rolling window sizes
+
+Explore non-linear relationships using alternative correlation measures
+
+Disclaimer
+
+This project is for educational purposes only and does not constitute financial or investment advice.
