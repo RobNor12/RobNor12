@@ -45,6 +45,9 @@ Tools & Technologies
 
 - Jupyter Notebook
 
+- HTML and CSS
+
+- Flask
 <br>
 
 Methodology
@@ -62,6 +65,8 @@ Methodology
 - Analyzed rolling correlations using a 12-month window
 
 - Conducted exploratory lag analysis to assess whether equity market changes precede housing price changes
+
+- Developed a Flask-based web interface to present and visualize analytical findings using HTML and CSS.
 
 <br>
 
