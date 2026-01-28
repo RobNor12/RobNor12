@@ -6,6 +6,8 @@ Hello, I'm Robert Norris III, and welcome to my Github page, this page is an ove
 
 📞 How to Contact Me
 
+<br>
+
 Linkedin: www.linkedin.com/in/robert-n-331315345
 
 Email: rnorris12021@gmail.com
@@ -18,6 +20,8 @@ note: the best way to get in contact with me is through email
 
 I am an inspiring IT professional interested in the fields of programming, data analytics, and data science
 
+<br>
+
 | Crediental name | Crediental Classification | Issuing Authority | Status | 
 | :--- | :--- |:--- | :--- |
 | Associates of Applied Sciences: Cybersecurity Technologies | Associates degree | Pearl River Community Collage(Popularville, Mississippi) | Graduated May, 2025 |
@@ -29,6 +33,8 @@ I am an inspiring IT professional interested in the fields of programming, data 
 📚 Repository Branches
 
 A list of the branches that my repisitory contains
+
+<br>
 
 | Name of Branch | Branch focus subject |
 | :--- | :--- |
