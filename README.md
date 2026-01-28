@@ -1,8 +1,10 @@
 💻 Harvard CS50: Introduction to Computer Science
 
+<hr>
+
 Hello, welcome to this branch of my git repository, This repository branch contains my completed problem sets and final projects from Harvard University's CS50x course. This coursework provided the fundamental programming logic and algorithms that underpin my data analysis and SQL querying skills.
 
-<br> 
+<hr> 
 
 🎯 Course Goals & Learning Objectives
 
@@ -16,7 +18,7 @@ Data Structures: Practical use of arrays, linked lists, hash tables, and diction
 
 SQL & Database Concepts: Foundational understanding of relational database design, querying, and manipulation.
 
-<br>
+<hr>
 
 🏗️ Repository Structure
 
