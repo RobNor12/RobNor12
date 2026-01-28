@@ -2,7 +2,7 @@
 
 Hello, I'm Robert Norris III, and welcome to my Github page, this page is an overview for my repoistory and its branches
 
-<br>
+<hr>
 
 📞 How to Contact Me
 
@@ -12,11 +12,11 @@ Email: rnorris12021@gmail.com
 
 note: the best way to get in contact with me is through email
 
-<br>
+<hr>
 
 👨‍💻 Credentials and Who I Am
 
-I am an inspiring IT professional interested in the fields of programming, data analytics, and cybersecurity
+I am an inspiring IT professional interested in the fields of programming, data analytics, and data science
 
 | Crediental name | Crediental Classification | Issuing Authority | Status | 
 | :--- | :--- |:--- | :--- |
@@ -24,7 +24,7 @@ I am an inspiring IT professional interested in the fields of programming, data 
 | CompTIA Security+ | Certification | CompTIA | Completed(Valid through April 2025-2028) |
 | Google Data Analytics Professional Certificate | Certificate | Coursera | Expected February 2026 |
 
-<br>
+<hr>
 
 📚 Repository Branches
 
