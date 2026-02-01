@@ -1,0 +1,17 @@
+{% extends "layout.html"}
+{% block content %}
+<h2>Delete Account</h2>
+
+<form action="/delete" method="POST">
+    <label>Username:</label><br>
+    <input name="username" required><br><br>
+
+    <label>Password:</label><br>
+    <input type="password" name="password" required><br><br>
+    
+    <button style="background: red; color: white;">
+        Delete Account
+    </button>
+</form>
+
+{% endblock %}

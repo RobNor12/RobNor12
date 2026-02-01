@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>Your Wall List</h2>
+
+{% if stocks %}
+    {% for stock in stocks %}
+        <div class="stock-card">
+            <strong>{{ stock[0] }}</strong> — {{ stock[1] }}
+            <a href="/bookmark/{{ stock[0] }}">
+                <button>⭐ Remove</button>
+            </a>
+        </div>
+    {% endfor %}
+{% else %}
+    <p>You haven't added any stocks yet.</p>
+{% endif %}
+
+{% endblock %}
