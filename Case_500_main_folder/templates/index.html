@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}Market Analysis{% endblock %}
+
+{% block content %}
+
+<div class="controls">
+    <form method="get" action="/">
+        <button name="view" value="trends">Market Trends</button>
+        <button name="view" value="normalized">Normalized Growth</button>
+        <button name="view" value="correlation">Rolling Correlation</button>
+    </form>
+</div>
+
+{% if plot %}
+    <img src="/static_plots/{{ plot }}" alt="Analysis Plot">
+    <div class="source-info" style="margin-top: 20px; font-size: 0.8em; color: #666;">
+        <p><strong>Data Attribution:</strong></p>
+        <ul>
+            <li><strong>Equity Data:</strong> S&P 500 (^GSPC) Historical Data via Kaggle.</li>
+            <li><strong>Housing Data:</strong> S&P CoreLogic Case-Shiller U.S. National Home Price Index via FRED.</li>
+        </ul>
+    </div>
+{% endif %}
+
+{% if description %}
+    <p>{{ description }}</p>
+{% endif %}
+
+{% endblock %}
