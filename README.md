@@ -1,22 +1,3 @@
-Building a GitHub repository for a data project is about more than just uploading code; it's about creating a technical narrative. Since your project has a "Triple Threat" theme, your GitHub should feel like a forensic report.
-
-Here is the ideal structure for your README.md file (the homepage of your project) to make it look professional.
-
-📂 GitHub Repository Structure
-README.md (The overview/landing page)
-
-SQL_Queries/ (Folder containing your BigQuery .sql files)
-
-Data/ (Link to the IEEE-CIS Kaggle dataset, as the file is too big to upload)
-
-Visualizations/ (Screenshots of your Tableau Heatmaps)
-
-Slideshow/ (The PDF of your presentation)
-
-📝 The README.md Template
-Copy and paste this into your GitHub README and fill in the bracketed info.
-
-Markdown
 # Forensic Fraud Analysis: The "Triple Threat" Vector
 **Analyzing 506k+ E-commerce Transactions to Identify High-Risk Behavioral Patterns**
 
