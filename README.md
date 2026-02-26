@@ -1,44 +1,49 @@
-🎓 Professional Portfolio Hub: Robert Norris III
+Building a GitHub repository for a data project is about more than just uploading code; it's about creating a technical narrative. Since your project has a "Triple Threat" theme, your GitHub should feel like a forensic report.
 
-Hello, I'm Robert Norris III, and welcome to my Github page, this page is an overview for my repoistory and its branches
+Here is the ideal structure for your README.md file (the homepage of your project) to make it look professional.
 
-<hr>
+📂 GitHub Repository Structure
+README.md (The overview/landing page)
 
-📞 How to Contact Me
+SQL_Queries/ (Folder containing your BigQuery .sql files)
 
-<br>
+Data/ (Link to the IEEE-CIS Kaggle dataset, as the file is too big to upload)
 
-Linkedin: www.linkedin.com/in/robert-n-331315345
+Visualizations/ (Screenshots of your Tableau Heatmaps)
 
-Email: rnorris12021@gmail.com
+Slideshow/ (The PDF of your presentation)
 
-note: the best way to get in contact with me is through email
+📝 The README.md Template
+Copy and paste this into your GitHub README and fill in the bracketed info.
 
-<hr>
+Markdown
+# Forensic Fraud Analysis: The "Triple Threat" Vector
+**Analyzing 506k+ E-commerce Transactions to Identify High-Risk Behavioral Patterns**
 
-👨‍💻 Credentials and Who I Am
+## 🎯 Project Objective
+This project identifies high-probability fraud signatures within the IEEE-CIS dataset. By merging transaction metadata with identity records, I developed a multivariate risk model to isolate the intersection of anonymity and hardware spoofing.
 
-I am an inspiring IT professional interested in the fields of programming, data analytics, and data science
+## 🛠️ Technical Stack
+* **Data Engineering:** Google BigQuery (SQL) using CTEs and complex Joins.
+* **Analysis:** Python (for exploratory data analysis) & AI Prompting (logic verification).
+* **Visualization:** Tableau Public (Heatmaps & Risk Scoring).
 
-<br>
+## 🔍 Key Discovery: The "Triple Threat"
+Through SQL-driven forensic analysis, I uncovered a critical risk nexus with a **95%+ fraud correlation**:
+1. **Anonymity:** Encrypted email domains (Protonmail).
+2. **Device Spoofing:** Desktop environments presenting Mobile hardware signatures.
+3. **Liquidity:** Credit card transactions vs. lower-risk Debit counterparts.
 
-| Crediental name | Crediental Classification | Issuing Authority | Status | 
-| :--- | :--- |:--- | :--- |
-| Associates of Applied Sciences: Cybersecurity Technologies | Associates degree | Pearl River Community Collage(Popularville, Mississippi) | Graduated May, 2025 |
-| CompTIA Security+ | Certification | CompTIA | Completed(Valid through April 2025-2028) |
-| Google Data Analytics Professional Certificate | Certificate | Coursera | Expected February 2026 |
+## 📊 Data Engineering Process
+I architected a centralized analytical layer in BigQuery to process 506,691 rows. 
+* **Data Cleaning:** Handled nulls in device metadata and normalized transaction types.
+* **Feature Engineering:** Developed a custom **Risk Score** formula calculating the mean fraud rate across email, device, and card type.
 
-<hr>
+## 📈 Strategic Recommendations
+* **MFA Triggers:** Mandatory Step-Up Authentication for Protonmail-originated traffic.
+* **Velocity Limits:** Strict thresholds for high-velocity "non-human" transaction patterns (100+ attempts in <10s).
+* **Cardholder Verification:** Enhanced manual review for Credit transactions paired with anonymous domains.
 
-📚 Repository Branches
-
-A list of the branches that my repisitory contains
-
-<br>
-
-| Name of Branch | Branch focus subject |
-| :--- | :--- |
-| Harvard-CS50 | Harvard CS50: Introduction to Computer Science |
-| S&P 500 vs Case-Shiller project| Personal Project |
-
-To access my branches click on the main branch drop down menu
+## 🔗 Project Links
+* [Interactive Tableau Dashboard](PASTE_YOUR_LINK_HERE)
+* [Project Slideshow (PDF)](./Slideshow/Fraud_Analysis_Slideshow.pdf)
