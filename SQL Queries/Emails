@@ -1,0 +1,12 @@
+SELECT 
+  R_emaildomain,
+  COUNT(*) AS total_attempts,
+  SUM(isFraud) AS fraud_count,
+  ROUND(SAFE_DIVIDE(SUM(isFraud), COUNT(*)) * 100, 2) AS fraud_percentage
+
+FROM `project-d2fe5a6c-bfb6-42c5-806.Fraud_analysis.Fraud_transactions`
+
+WHERE R_emaildomain IS NOT NULL
+GROUP BY R_emaildomain
+HAVING fraud_count > 1
+ORDER BY fraud_percentage DESC
