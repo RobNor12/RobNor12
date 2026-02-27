@@ -1,0 +1,14 @@
+SELECT 
+  t.card4 AS card_network,
+  t.card6 AS card_type,
+  COUNT(t.TransactionID) AS total_transactions,
+  SUM(t.isFraud) AS fraud_count,
+  ROUND(SAFE_DIVIDE(SUM(t.isFraud), COUNT(t.TransactionID)) * 100, 2) AS fraud_rate_pct
+
+FROM `project-d2fe5a6c-bfb6-42c5-806.Fraud_analysis.Fraud_transactions` t
+WHERE card6 IS NOT NULL
+  AND card4 IS NOT NULL
+
+GROUP BY card_network, card_type
+HAVING fraud_count > 1
+ORDER BY fraud_rate_pct DESC
