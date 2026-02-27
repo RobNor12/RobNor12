@@ -28,3 +28,4 @@ I architected a centralized analytical layer in BigQuery to process 506,691 rows
 ## 🔗 Project Links
 * [Interactive Tableau Dashboard](PASTE_YOUR_LINK_HERE)
 * [Project Slideshow (PDF)](./Slideshow/Fraud_Analysis_Slideshow.pdf)
+* [Data Source](https://www.kaggle.com/competitions/ieee-fraud-detection)
