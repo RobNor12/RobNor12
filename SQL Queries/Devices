@@ -1,0 +1,17 @@
+SELECT 
+  i.DeviceType,
+  i.DeviceInfo,
+  Count(t.TransactionID) AS total_transactions,
+  SUM (t.isFraud) as fraud_count,
+  ROUND(SAFE_DIVIDE(SUM(t.isFraud), COUNT(t.TransactionID)) * 100, 2) AS fraud_rate_pct
+
+FROM `project-d2fe5a6c-bfb6-42c5-806.Fraud_analysis.Fraud_transactions` t
+LEFT JOIN `project-d2fe5a6c-bfb6-42c5-806.Fraud_analysis.Fraud_identity` i
+  ON t.TransactionID = i.TransactionID
+
+WHERE i.DeviceType IS NOT NULL
+AND i.DeviceInfo IS NOT NULL
+
+GROUP BY i.DeviceType, i.DeviceInfo
+HAVING fraud_count > 1
+ORDER BY fraud_rate_pct DESC, DeviceInfo
