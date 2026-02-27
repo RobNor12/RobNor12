@@ -32,8 +32,7 @@ This project explores the macroeconomic interplay between U.S. equity performanc
 * Apply non-linear correlation measures to identify hidden dependencies.
 
 ## 🔗 Project Links
-* [View the Flask Application](PASTE_YOUR_LINK_HERE)
-* [Data Sources](https://fred.stlouisfed.org/series/CSUSHPINSA)
+* [Data Source: Housing market](https://fred.stlouisfed.org/series/CSUSHPINSA)
 
 ---
 *Disclaimer: This analysis is for educational and portfolio purposes only and does not constitute financial or investment advice.*
