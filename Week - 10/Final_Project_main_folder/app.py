@@ -430,4 +430,9 @@ def search():
 
 #Start app
 if __name__ == "__main__":
-    app.run(debug=True)
+    # Render provides a 'PORT' environment variable. Default to 5000 for local testing.
+    port = int(os.environ.get("PORT", 5000))
+    # Set debug=False for production to improve security and performance
+    app.run(host='0.0.0.0', port=port, debug=False)
+
+
