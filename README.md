@@ -42,4 +42,6 @@ All assignments are organized into zero-padded folders (e.g., week01, week02) to
 
 Render
 
-For the final project I used render to grant live access, due to the nature of 
+For the final project I used render to grant live access, This app uses a local SQLite database for demonstration. Data is reset periodically due to cloud hosting constraints
+
+[Wall Watcher](https://wall-watcher.onrender.com)
