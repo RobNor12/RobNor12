@@ -26,7 +26,11 @@ Session(app)
 #intilized db
 def lookup(symbol):
     symbol = symbol.upper().strip()
-    api_key = "D5AQ9FSAIVLLA37G"
+    api_key = os.environ.get("ALPHAVANTAGE_KEY") 
+    
+    if not api_key:
+        print("Error: API Key not found in environment variables")
+        return None
 
     url = f"https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol={symbol}&apikey={api_key}"
     response = requests.get(url)
@@ -434,5 +438,6 @@ if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     # Set debug=False for production to improve security and performance
     app.run(host='0.0.0.0', port=port, debug=False)
+
 
 
