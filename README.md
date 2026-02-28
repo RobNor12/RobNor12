@@ -37,3 +37,9 @@ All assignments are organized into zero-padded folders (e.g., week01, week02) to
 | **Week 8** | HTML, CSS, JavaScript | Web Development Fundamentals |
 | **Week 9** | Flask | Web Application Development | 
 | **Week 10** | Final Project | Comprehensive capstone | 
+
+<hr>
+
+Render
+
+For the final project I used render to grant live access, due to the nature of 
