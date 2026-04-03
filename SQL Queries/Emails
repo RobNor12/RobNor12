@@ -2,11 +2,16 @@ SELECT
   R_emaildomain,
   COUNT(*) AS total_attempts,
   SUM(isFraud) AS fraud_count,
-  ROUND(SAFE_DIVIDE(SUM(isFraud), COUNT(*)) * 100, 2) AS fraud_percentage
+  ROUND(SAFE_DIVIDE(SUM(isFraud), COUNT(*)) * 100, 2) AS fraud_percentage,
+  CASE
+    WHEN (SAFE_DIVIDE(SUM(isFraud), COUNT(*))) * 100 > 20 THEN "Critical Risk"
+    WHEN (SAFE_DIVIDE(SUM(isFraud), COUNT(*))) * 100 > 5 THEN "High Risk"
+    WHEN (SAFE_DIVIDE(SUM(isFraud), COUNT(*))) * 100 > 1 THEN "Medium Risk"
+    ELSE "Low Risk"
+  END AS risk_tier
 
 FROM `project-d2fe5a6c-bfb6-42c5-806.Fraud_analysis.Fraud_transactions`
-
 WHERE R_emaildomain IS NOT NULL
 GROUP BY R_emaildomain
-HAVING fraud_count > 1
+HAVING total_attempts > 10
 ORDER BY fraud_percentage DESC
