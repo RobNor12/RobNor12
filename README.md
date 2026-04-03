@@ -40,5 +40,7 @@ A list of the branches that my repisitory contains
 | :--- | :--- |
 | Harvard-CS50 | Harvard CS50: Introduction to Computer Science |
 | S&P 500 vs Case-Shiller project| Personal Project |
+| IEEE Fraud Analysis| Personal Project|
+
 
 To access my branches click on the main branch drop down menu
