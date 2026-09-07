@@ -6,7 +6,7 @@ This repository houses my core systems and security engineering projects. I focu
 
 | Project Name | Focus Subject | link |
 | :--- | :--- | :--- |
-| Active Directory Hybrid homelab | Active directory lab connecing both Linux and Windows | [Active directory link]()
+| Active Directory Hybrid homelab | Active directory lab connecing both Linux and Windows | [Active directory link](https://github.com/RobNor12/IT-Automation-Engineering/blob/Active-Directory-hybrid-Homelab/README.md)
 | Credential Generator & Lifecycle Manager | Automated Credential Manager. | [Credential Manager Link](https://github.com/RobNor12/Security-Engineering-Projects/blob/Credential-Generator-&-Lifecycle-Manager/README.md) |
 | IEEE Fraud Analysis| Operational Risk & Fraud Detection Workflow. | [IEEE Fraud Analysis Link](https://github.com/RobNor12/RobNor12/tree/IEEE-Fraud-Analysis/README.md) |
 | Python Email Threat Parsing | Automated threat intelligence parsing through python | [Email Parsing Link](https://github.com/RobNor12/RobNor12/blob/Python-Email-Threat-Parser/README.md) |
