@@ -10,9 +10,11 @@ A multi-OS enterprise lab environment featuring a cloud-hosted Windows Server Do
 - **Client 1:** Windows 11 Enterprise (`WIN-CLIENT01`) (Natively joined via Active Directory domain join)
 - **Client 2:** Ubuntu Linux (`rnorris-ubuntu`) (Integrated via Samba/Winbind & PAM)
 
+---
+
 ### 🛠️ Key Technical Challenges & Solutions
 
-### 🖥️ Ubuntu Linux Client Integration 
+### Ubuntu Linux Client Integration 
 
 Integrating Linux clients with an Active Directory domain introduces notorious cross-platform friction. Below are the primary infrastructure hurdles and solutions implemented in this lab:
 
@@ -55,13 +57,15 @@ Integrating Linux clients with an Active Directory domain introduces notorious c
   sudo pam-auth-update # Enabled "Create home directory on login"
   ```
 
-### 🖥️ Windows 11 Enterprise Client Integration
+### Windows 11 Enterprise Client Integration
 
 Unlike the Linux client, the Windows 11 Enterprise endpoint was provisioned using the native operating system workflow:
 
 1. **Domain Join:** Configured the system properties (`sysdm.cpl`) to join the `RNORRIS-LAB.LOCAL` domain using administrative credentials.
 2. **DNS Validation:** Verified network adapter IPv4 settings pointed correctly to the cloud Domain Controller (`104.225.141.208`).
 3. **Authentication Check:** Validated successful domain sign-in and remote management connectivity back to `cwm3382`.
+
+---
 
 ### 🧪 Verification & Testing
 * **1. Domain Join Status (Ubuntu Client)**
@@ -117,18 +121,22 @@ ROBERT-WIN11    Windows 11 Enterprise  ...
 robert-ubuntu   Ubuntu                 ...
 ```
 
+---
+
 ### 📂 Repository Structure
 *   **[🧱 assets/](assets/)** 🛠️
     *   Contains the infrastructure "blueprints," including `smb.conf` configurations.
 *   **[📖 documentation/](documentation/)** 🖼️
     *   Houses the project documentation, including architectural diagrams, workflow logic, and screenshots of the active directory.
 
+---
+
 ### 🚀 Future Enhancements
 Implementing Group Policy Objects (GPOs) to restrict SSH access on Linux clients to specific AD security groups.
 
 Integrating log shipping and auditing through SIEM agents (e.g., Wazuh/TheHive lab configuration).
 
-<hr> 
+---
 
 ### Return page
 
