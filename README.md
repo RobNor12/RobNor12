@@ -405,4 +405,6 @@ The remaining stretch goal is to establish connectivity from an external VM outs
 This would extend the project from an Azure-only Active Directory environment into a more complete hybrid networking demonstration.
 
 ---
-##
+
+### Return page
+[Return to Repository Hub](https://github.com/RobNor12/IT-Automation-Engineering/blob/main/README.md)
